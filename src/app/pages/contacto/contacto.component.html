@@ -1,14 +1,13 @@
 <section>
     <div class="container">
-        <div class="texto">
-            <p>Puedes contactar con nosotros a través del formulario, mediante <span>correo electrónico</span> o
-                visitarnos
-                en: </p>
 
-
-        </div>
         <div class="contacto">
+            <div class="texto">
+                <p>Puedes contactar con nosotros a través del formulario, mediante <span>correo electrónico</span> o
+                    en el <span>678765435</span></p>
 
+
+            </div>
             <div>
                 <form [formGroup]="contactoForm" (ngSubmit)="onSubmit()">
                     <input type="text" formControlName="nombre" placeholder="Nombre">
@@ -22,8 +21,13 @@
         </div>
         <div class="mapa">
             <div class="localizacion">
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="direccion">C/ Cerrajeros 2B, 28816, Camarma de Esteruelas</p>
+
+                <div class="texto">
+                    <p>También puedes visitarnos en C/ Cerrajeros 2B, 28816,
+                        Camarma de Esteruelas.</p>
+                </div>
+
+
             </div>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.121301671455!2d-3.390248323425014!3d40.53890914819315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd424bb4a370a94f%3A0x484eef78786df955!2sKigenBox!5e0!3m2!1ses!2ses!4v1750616271356!5m2!1ses!2ses"

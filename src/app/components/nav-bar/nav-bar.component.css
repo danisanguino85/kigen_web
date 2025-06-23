@@ -1,39 +1,92 @@
 .container {
-  margin: 0 auto;
-  font-size: 1.3rem;
+  padding: 1rem;
+}
+.cerrado {
+  display: none;
 }
 ul {
-  display: flex;
   list-style: none;
-  justify-content: space-around;
-
+  flex-direction: column;
   color: white;
-}
-ul > li:hover {
-  transform: scale(1.07);
+  padding: 1rem;
+  li {
+    cursor: pointer;
+  }
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 li {
   cursor: pointer;
-  padding: 2rem;
-  transition: 0.3 ease;
 }
-.servicios {
-  position: relative;
+.abierto {
+  display: flex;
 }
-.servicios:hover {
-  .desplegable {
-    display: flex;
-    flex-direction: column;
+i {
+  color: white;
+  font-size: 250%;
+}
+hr {
+  margin: 1rem;
+  border-top: 0.25px;
+  opacity: 0.25;
+}
+.logo {
+  text-align: center;
+}
+div.hamburguesa {
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  width: 70px;
+  hr {
+    margin: 0.5rem;
+    border: 2px solid white;
+    opacity: 1;
   }
 }
-.desplegable {
-  position: absolute;
-  width: 260px;
-  top: calc(0 +2rem);
-  display: none;
-  background-color: black;
+@media (min-width: 1004px) {
+  .cerrado {
+    display: flex;
+  }
+  i {
+    display: none;
+  }
+  .container {
+    margin: 0 auto;
+    font-size: 1.3rem;
+  }
+  ul {
+    flex-direction: row;
+
+    justify-content: space-around;
+  }
+  ul > li:hover {
+    transform: scale(1.07);
+  }
   li {
-    padding-left: 0.5rem;
-    padding-top: 2rem;
+    padding: 2rem;
+    transition: 0.3 ease;
+  }
+  .desplegable {
+    position: absolute;
+    width: 260px;
+    top: calc(0 +2rem);
+    display: none;
+    background-color: black;
+    li {
+      padding-left: 0.5rem;
+      padding-top: 2rem;
+    }
+  }
+  .servicios {
+    position: relative;
+  }
+  .servicios:hover {
+    .desplegable {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  hr {
+    display: none;
   }
 }

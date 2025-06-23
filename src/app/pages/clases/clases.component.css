@@ -1,0 +1,38 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  gap: 1rem;
+}
+li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+section {
+  padding: 1rem;
+}
+h1 {
+  text-align: center;
+}
+hr {
+  border: 1px solid lightgray;
+  margin: 1.5rem;
+}
+div {
+  margin-top: 2rem;
+}
+
+@media (min-width: 1004px) {
+  h1 {
+    font-size: 2rem;
+  }
+  li {
+    font-size: 1.3rem;
+  }
+  p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+}

@@ -1,1 +1,51 @@
-<p>clases works!</p>
+<section class="container">
+
+    <nav>
+        <ul>
+            <li (click)="onClick('WOD')"
+                [style]="titulo === 'WOD' ? { 'color':'var(--primary-color)', 'font-weight':'bolder'}:{}">
+                WOD</li>
+            <li (click)="onClick('HALTEROFILIA')"
+                [style]="titulo === 'HALTEROFILIA' ? { 'color':'var(--primary-color)', 'font-weight':'bolder'}:{}">
+                HALTEROFILIA</li>
+            <li (click)="onClick('GIMNÁSTICOS-ENDURANCE')"
+                [style]="titulo === 'GIMNÁSTICOS-ENDURANCE' ? { 'color':'var(--primary-color)', 'font-weight':'bolder'}:{}">
+                GIM-ENDURANCE</li>
+            <li (click)="onClick('K-BOOTY')"
+                [style]="titulo === 'K-BOOTY' ? { 'color':'var(--primary-color)', 'font-weight':'bolder'}:{}">K-BOOTY
+            </li>
+            <li (click)="onClick('TEAM WOD')"
+                [style]="titulo === 'TEAM WOD' ? { 'color':'var(--primary-color)', 'font-weight':'bolder'}:{}">TEAM WOD
+            </li>
+            <li (click)="onClick('K-HYROX')"
+                [style]="titulo === 'K-HYROX' ? { 'color':'var(--primary-color)', 'font-weight':'bolder'}:{}">K-HYROX
+            </li>
+            <li (click)="onClick('STRONGMAN')"
+                [style]="titulo === 'STRONGMAN' ? { 'color':'var(--primary-color)', 'font-weight':'bolder'}:{}">
+                STRONGMAN</li>
+            <li (click)="onClick('OPEN')"
+                [style]="titulo === 'OPEN' ? { 'color':'var(--primary-color)', 'font-weight':'bolder'}:{}">OPEN</li>
+            <li (click)="onClick('FUERZA')"
+                [style]="titulo === 'FUERZA' ? { 'color':'var(--primary-color)', 'font-weight':'bolder'}:{}">FUERZA</li>
+        </ul>
+
+    </nav>
+
+
+
+    <div>
+        @if (!titulo) {
+        <h1>NUESTRAS CLASES</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, culpa nesciunt quis quisquam possimus
+            delectus! Eos ducimus enim libero impedit quo necessitatibus, placeat omnis rem aliquid corrupti dolor,
+            sapiente non aut minus ut molestias laudantium voluptates et explicabo? Quasi unde, blanditiis distinctio
+            perspiciatis temporibus optio. Id fugit delectus error animi?</p>
+        }
+        @if(titulo){
+        <h1>{{titulo}}</h1>
+        <hr>
+        <p>{{texto}}</p>
+        }
+    </div>
+</section>
