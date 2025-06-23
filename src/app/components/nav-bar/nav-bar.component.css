@@ -1,0 +1,39 @@
+.container {
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+
+  color: white;
+}
+ul > li:hover {
+  transform: scale(1.07);
+}
+li {
+  cursor: pointer;
+  padding: 2rem;
+  transition: 0.3 ease;
+}
+.servicios {
+  position: relative;
+}
+.servicios:hover {
+  .desplegable {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.desplegable {
+  position: absolute;
+  width: 260px;
+  top: calc(0 +2rem);
+  display: none;
+  background-color: black;
+  li {
+    padding-left: 0.5rem;
+    padding-top: 2rem;
+  }
+}

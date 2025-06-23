@@ -1,0 +1,21 @@
+<div class="container">
+    <ul>
+        <li class="logo" [routerLink]="['/inicio']">KIGEN</li>
+        <li class="servicios">Servicios <span>▼</span>
+            <ul class="desplegable">
+                <li [routerLink]="['/']">Clases</li>
+                <li [routerLink]="['/']">Entrenamiento personal</li>
+                <li [routerLink]="['/']">Rehabilitación</li>
+                <li [routerLink]="['/']">Nutrición</li>
+            </ul>
+        </li>
+        <li [routerLink]="['/horarios']">Galeria
+        </li>
+        <li [routerLink]="['/horarios']">Tarifas</li>
+        <li [routerLink]="['/horarios']">Horarios</li>
+        <li [routerLink]="['/sobre_nosotros']">Instalaciones</li>
+        <li [routerLink]="['/contacto']"
+            [style]="router.url === '/contacto' ? {'backgroundColor':'white', 'color':'black'}:{}">Contacto
+        </li>
+    </ul>
+</div>
